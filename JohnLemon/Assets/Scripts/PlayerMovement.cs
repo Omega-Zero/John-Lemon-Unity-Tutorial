@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         m_Movement.Set(horizontal, 0f, vertical);
+        //Normalizes diagonial movement to make it equal to vertical/ horizontal
         m_Movement.Normalize();
 
 
